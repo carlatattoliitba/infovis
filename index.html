@@ -6,27 +6,56 @@
     <title>Visualización de InfoVis</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
             margin: 0;
+            padding: 40px 20px;
             background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+            margin-bottom: 50px;
         }
         img {
-            max-width: 90%;
+            max-width: 100%;
             height: auto;
             border: 1px solid #ccc;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+        h1 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+        .flourish-container {
+            width: 100%;
+            max-width: 900px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <h1>RawGraph</h1>
-    <img src="viz.svg" alt="RawGraph">
+    <div class="container">
+        <h1>RawGraph</h1>
+        <img src="viz.svg" alt="RawGraph">
+    </div>
+
+    <div class="flourish-container">
+        <h1>Flourish Chart</h1>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/27939085">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript>
+                <img src="https://public.flourish.studio/visualisation/27939085/thumbnail" width="100%" alt="visualization" />
+            </noscript>
+        </div>
+        </div>
 
 </body>
 </html>
