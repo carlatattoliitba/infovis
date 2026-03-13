@@ -15,29 +15,24 @@
             background-color: #f4f4f9;
             color: #333;
         }
-        .container {
+        .container, .flourish-container, .datawrapper-container {
             width: 100%;
             max-width: 900px;
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
-        /* Ajuste para el objeto SVG interactivo sugerido por tu profesor */
+        /* Estilo para el objeto SVG interactivo */
         object {
             width: 100%;
-            height: 700px; /* Ajustamos la altura para que el diagrama de flujos entre cómodo */
+            height: 700px; 
             border: 1px solid #ccc;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             background-color: white;
         }
         h1 {
-            /* Eliminamos el border-bottom para sacar la raya oscura definitivamente */
             padding-bottom: 10px;
             width: 100%;
-        }
-        .flourish-container {
-            width: 100%;
-            max-width: 900px;
-            margin-top: 20px;
+            border: none; /* Asegura que no haya rayas grises */
         }
     </style>
 </head>
@@ -58,6 +53,24 @@
                 <img src="https://public.flourish.studio/visualisation/27939085/thumbnail" width="100%" alt="visualization" />
             </noscript>
         </div>
+    </div>
+
+    <div class="datawrapper-container">
+        <h1>Pizza Topping Choices</h1>
+        <iframe title="Men vs Women: Pizza Topping Choices" aria-label="Range Plot" id="datawrapper-chart-8qk1U" src="https://datawrapper.dwcdn.net/8qk1U/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="456" data-external="1"></iframe>
+        <script type="text/javascript">
+            window.addEventListener("message", function(a) {
+                if (void 0 !== a.data["datawrapper-height"]) {
+                    var e = document.querySelectorAll("iframe");
+                    for (var t in a.data["datawrapper-height"])
+                        for (var r, i = 0; r = e[i]; i++)
+                            if (r.contentWindow === a.source) {
+                                var d = a.data["datawrapper-height"][t] + "px";
+                                r.style.height = d
+                            }
+                }
+            });
+        </script>
     </div>
 
 </body>
