@@ -21,15 +21,16 @@
             text-align: center;
             margin-bottom: 50px;
         }
-        img {
-            max-width: 100%;
+        /* Ajuste para el objeto SVG interactivo */
+        object {
+            width: 100%;
             height: auto;
             border: 1px solid #ccc;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             background-color: white;
         }
         h1 {
-            border-bottom: 2px solid #ddd;
+            /* Ajuste: eliminamos el border-bottom para sacar la raya gris */
             padding-bottom: 10px;
             width: 100%;
         }
@@ -44,7 +45,9 @@
 
     <div class="container">
         <h1>RawGraph</h1>
-        <img src="viz.svg" alt="RawGraph">
+        <object data="viz.svg" type="image/svg+xml">
+            Tu navegador no soporta visualización de SVG.
+        </object>
     </div>
 
     <div class="flourish-container">
@@ -55,7 +58,7 @@
                 <img src="https://public.flourish.studio/visualisation/27939085/thumbnail" width="100%" alt="visualization" />
             </noscript>
         </div>
-        </div>
+    </div>
 
 </body>
 </html>
